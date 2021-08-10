@@ -1,0 +1,40 @@
+#tweet-text {
+  display: flex;
+  justify-content: center;
+
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+
+  border: 0px;
+  border-bottom: 4px solid #545149;
+  
+  background-color: #f4f1ec;
+  margin-bottom: 10px;
+  margin-top: 15px;
+
+  resize: none;
+  width: 600px;
+  height: 35px;
+}
+
+#button {
+  font-family: 'Bungee', cursive;
+  color: white;
+  background-color: #4056A1;
+}
+
+#container2 {
+  display: flex;
+  justify-content: space-between;
+}
+
+#char {
+  font-family: 'Bungee', cursive;
+  color: black;
+}
+
+#bottom {
+  size: 25px;
+}
