@@ -1,5 +1,3 @@
-// const textArea = document.getElementById("tweet-text");
-
 $(document).ready(function() {
   const textArea = $("#tweet-text");
 
@@ -10,19 +8,17 @@ $(document).ready(function() {
     let charExceed = 140 - this.value.length
     counter.text(charExceed);
 
-    // console.log("x: ", x)
-    // console.log("this.value: ", this.value)
-
+    //Change font colour if characters exceeds 140. Reverts back to black if within char limit
     if (charExceed < 0) {
       counter.css({
         color: 'red'
       });
+    } else if (charExceed > 0) {
+      counter.css({
+        color: 'black'
+      });
     }
-    // colour = (counter.text(140 - this.value.length)) < 0 ? 'red' : 'black';
 
   })
 });
 
-// textArea.addEventListener("blur", () => {
-//   console.log("checking with blur")
-// });

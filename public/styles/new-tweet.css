@@ -19,6 +19,15 @@
   height: 35px;
 }
 
+#tweet-text:focus, input:focus {
+  outline:none;
+}
+
+
+.new-tweet {
+  display: flex;
+  justify-content: center;
+}
 #button {
   font-family: 'Bungee', cursive;
   color: white;
@@ -37,4 +46,117 @@
 
 #bottom {
   size: 25px;
+}
+
+#tweet-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+}
+
+#actual-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 170px;
+  margin-top: 40px;
+  margin-bottom: 15px;
+  border: solid;
+}
+
+div#actual-container:hover {
+  box-shadow: 5px 5px #bdbdbdd0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+#top-box {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0px;
+}
+
+#ico-name {
+  display: flex;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+#bottom-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 12px;
+}
+
+#handle {
+  display: flex;
+  margin-right: 25px;
+  margin-top: 25px;
+  opacity: 0.5;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-right: 25px;
+  color: black;
+  font-size: 15px;
+}
+
+#date {
+  display: flex;
+  margin-top: 8px;
+  margin-left: 15px;
+}
+
+#tweet-content {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+
+  border: 0px;
+  border-bottom: 4px solid #545149;
+  
+  background-color: #f4f1ec;
+  margin-top: 15px;
+  margin-left: 5px;
+
+  resize: none;
+  width: 580px;
+}
+
+.fab {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.fas {
+  color: #4056A1;
+}
+
+i.fas.fa-retweet {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+i.fas.fa-retweet:hover {
+  color: rgba(43, 39, 0, 0.247);
+}
+
+i.fas.fa-flag:hover {
+  color: rgba(43, 39, 0, 0.247);
+}
+
+i.far.fa-heart:hover {
+  color: rgba(43, 39, 0, 0.247);
 }
