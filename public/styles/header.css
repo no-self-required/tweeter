@@ -6,4 +6,5 @@ header {
   align-items: center;
   background-color: cyan;
   background-image: url(/images/blu-stripes.png);
+  /* padding-top: 100px; */
 }

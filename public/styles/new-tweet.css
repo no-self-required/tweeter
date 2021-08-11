@@ -105,7 +105,7 @@ div#actual-container:hover {
   justify-content: space-between;
   margin-top: 8px;
   margin-right: 25px;
-  color: black;
+  color: #4056A1;
   font-size: 15px;
 }
 
@@ -140,23 +140,22 @@ div#actual-container:hover {
   margin-right: 10px;
 }
 
-.fas {
-  color: #4056A1;
-}
-
 i.fas.fa-retweet {
   margin-left: 5px;
   margin-right: 5px;
 }
 
 i.fas.fa-retweet:hover {
+  transition: 0.3s;
   color: rgba(43, 39, 0, 0.247);
 }
 
 i.fas.fa-flag:hover {
+  transition: 0.3s;
   color: rgba(43, 39, 0, 0.247);
 }
 
 i.far.fa-heart:hover {
+  transition: 0.3s;
   color: rgba(43, 39, 0, 0.247);
 }
