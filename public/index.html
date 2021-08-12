@@ -26,6 +26,8 @@
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/client.js"></script>
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
   </head>
 
   <body>
@@ -50,9 +52,9 @@
     <!-- Page-specific (main) content here -->
     <main class="container">
       <section class="new-tweet">
-        <form method="POST" action='/tweets'>
-
-          <textarea name="text" id="tweet-text" placeholder="What are you humming about?"></textarea>
+        <form method="POST" action='/tweets' id="tweet-form">
+          <label for="text" id="tweet-label">What are you humming about?</label>
+          <textarea name="text" id="tweet-text"></textarea>
 
           <div id="container2">
             <button id="button" type="submit">Tweet</button>
@@ -60,27 +62,10 @@
           </div>
         </form>
         
-      </section>   
-      <div id="tweet-container">
-        <div id="actual-container">
-          <div id="top-box">
-            <div id="ico-name">
-              <i class="fab fa-jenkins"></i>
-              <p>Jimmy</p>
-            </div>
-            <p id="handle">@JimmyN</p>
-          </div>
-          <textarea name="tweet" id="tweet-content" disabled="yes">Hello world!</textarea>
-          <div id="bottom-box">
-            <p id="date">10 days ago</p>
-            <div class="icons">
-              <i class="fas fa-flag"></i>
-              <i class="fas fa-retweet"></i>
-              <i class="far fa-heart"></i>            
-            </div>
-          </div>
-        </div>
-      </div>  
+      </section>
+      <section id="tweet-section">   
+      </section> 
+
       <div class="main">
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
@@ -103,7 +88,6 @@
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>        <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
@@ -113,7 +97,6 @@
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>        <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
@@ -123,7 +106,6 @@
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
-        <p>Some text some text some text some text..</p>        <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
@@ -135,6 +117,7 @@
         <p>Some text some text some text some text..</p>
         <p>Some text some text some text some text..</p>
       </div>
+      
     </main>  
     </section>
   </body>
