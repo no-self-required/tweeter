@@ -19,18 +19,50 @@
   height: 35px;
 }
 
+/* NEED TO CLEAR TWEET TEXT FORM AFTER SUBMIT */
 #tweet-text:focus, input:focus {
   outline:none;
 }
 
-
 .new-tweet {
   display: flex;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#alert-140 {
+  order: -1;
+}
+
+#alert-null {
+  order: -1;
+}
+
+#alert {
+  display: flex;
+  border: solid red;
+  padding: 7px;
+  width: 600px;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 20px;
+  color: red;
+}
+
+#alert2 {
+  display: flex;
+  border: solid red;
+  padding: 7px;
+  width: 600px;
+  height: 40px;
+  justify-content: space-between;
+  font-size: 20px;
+  color: red;
 }
 
 #tweet-form {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 #tweet-label {
   font-family: 'Source Sans Pro', sans-serif;
@@ -187,4 +219,8 @@ i.fas.fa-flag:hover {
 i.far.fa-heart:hover {
   transition: 0.3s;
   color: rgba(43, 39, 0, 0.247);
+}
+
+#alert {
+  display: flex;
 }

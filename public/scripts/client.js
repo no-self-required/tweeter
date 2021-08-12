@@ -5,6 +5,9 @@
  */
 $(document).ready(function() {
 
+  $( "#alert-140" ).hide();
+  $( "#alert-null" ).hide();
+
 const renderTweets = function(tweets) {
   $( "#tweet-section" ).empty();
   for (let tweet of tweets) {
@@ -45,17 +48,25 @@ $('#tweet-form').submit((event) => {
   event.preventDefault();
   const str = $( "#tweet-form" ).serialize();
   if (str === 'text=') {
-    alert("Cannot tweet empty message!");
+    $( "#alert-null" ).slideDown( "slow", function() {
+    // Animation complete.
+    });
     return;
   }
   else if (str.length > 145) {   
-    alert("Cannot tweet more than 140 characters!");
+    $( "#alert-140" ).slideDown( "slow", function() {
+      // Animation complete.
+    });
     return;
   }
   $.ajax('/tweets', { 
     method: 'POST',
     data: str 
   }).then(() => {
+    $( "#alert-140" ).slideUp( "slow", function() {
+    });
+    $( "#alert-null" ).slideUp( "slow", function() {
+      });
     //refreshes tweet container tweets after submitting
     loadTweets();
   })
