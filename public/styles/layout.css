@@ -14,9 +14,11 @@
   }
   
   body {
-    color: #545149;
-    background-color: #f4f1ec;
+    color: #ffffff;
+    font-weight: bold;
     font-family: 'Source Sans Pro', sans-serif;
+    background-color: black;
+    background-image: url(/images/blu-stripes.png);
   }
   
   .logo {
@@ -41,6 +43,8 @@
     display: flex;
     margin-top: 5em;
     justify-content: space-between;
+    /* background-image: url(/images/blu-stripes.png);
+    background-color: black; */
   }
 }
 
@@ -57,7 +61,7 @@
    */
   
   body {
-    color: #545149;
+    color: #ffffff;
     background-color: #f4f1ec;
     font-family: 'Source Sans Pro', sans-serif;
   }
@@ -81,6 +85,8 @@
   }
   
   .realBody {
+    background-image: url(/images/blu-stripes.png);
+    background-color: black;
     /* margin-top: 1em; */
   }
 }

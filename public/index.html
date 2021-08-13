@@ -4,6 +4,8 @@
     <!-- Meta Information -->
     <title>Tweeter - Home Page</title>
 
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
+
     <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" type="text/css" />
     
@@ -28,6 +30,7 @@
     <script type="text/javascript" src="/scripts/composer-char-counter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/timeago.js/4.0.2/timeago.min.js" integrity="sha512-SVDh1zH5N9ChofSlNAK43lcNS7lWze6DTVx1JCXH1Tmno+0/1jMpdbR8YDgDUfcUrPp1xyE53G42GFrcM0CMVg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     
+    
   </head>
 
   <body>
@@ -40,7 +43,7 @@
     <section class="realBody">
       <header>
         <div>
-            <img id="profileAva" src="/images/profile-hex.png"> 
+            <i class="fas fa-robot" id="profileAva" ></i>
         </div>
         <br>
         <div id="avaName">
@@ -53,8 +56,8 @@
     <main class="container">
       <section class="new-tweet">
         <form method="POST" action='/tweets' id="tweet-form">
-          <label for="text" id="tweet-label">What are you humming about?</label>
-          <textarea name="text" id="tweet-text"></textarea>
+          <label for="text" id="tweet-label" >What are you humming about?</label>
+          <textarea name="text" id="tweet-text" ></textarea>
 
           <div id="container2">
             <button id="button" type="submit">Tweet</button>

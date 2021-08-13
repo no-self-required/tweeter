@@ -7,11 +7,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(79, 255, 255);
+    background-color: black;
     background-image: url(/images/blu-stripes.png);
     margin-top: 5em;
     margin-left: 3em;
     margin-right: 10em;
+
+    border: solid whitesmoke;
+    border-radius: 1em;
   }
   
   #avaName {
@@ -22,10 +25,15 @@
   
   #avaNameChar {
     margin: 0;
+    color: white;
   }
   
   #profileAva {
-    height: 15em;
+    height: 200px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 10em;
+    color: white;
   }
 }
 
@@ -33,12 +41,12 @@
 @media only screen and (min-width: 0px) and (max-width: 1024px) {
   
   header {
-    height: 400px;
+    height: 300px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: cyan;
+    background-color: black;
     background-image: url(/images/blu-stripes.png);
     margin-top: 5em;
     /* padding-top: 100px; */
@@ -50,6 +58,15 @@
 
   #avaNameChar {
     margin: 0;
+    color: white;
+  }
+
+  #profileAva {
+    height: 200px;
+    /* margin: 0; */
+    margin-bottom: -25px;
+    font-size: 10em;
+    color: white;
   }
 }
 

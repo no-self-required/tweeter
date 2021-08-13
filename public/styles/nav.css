@@ -2,7 +2,8 @@
   nav {
     display: flex;
     height: 5em;
-    background-color: #4056A1;
+    background-color: black;
+    background-image: url(/images/blu-stripes.png);
     color: white;
     justify-content: space-between;
     position: fixed; /* Set the navbar to fixed position */
@@ -22,7 +23,7 @@
   #double-down {
     display: flex;
     justify-content: center;
-    color: red
+    color: white;
   }
   
   .logo {
@@ -38,7 +39,7 @@
 nav {
   display: flex;
   height: 5em;
-  background-color: cyan;
+  background-color: black;
   background-image: url(/images/blu-stripes.png);
   color: white;
   justify-content: space-between;
@@ -59,7 +60,7 @@ nav {
 #double-down {
   display: flex;
   justify-content: center;
-  color: red
+  color: white;
 }
 
 .logo {

@@ -15,7 +15,7 @@ $(document).ready(function() {
       });
     } else if (charExceed > 0) {
       counter.css({
-        color: 'black'
+        color: 'white'
       });
     }
 

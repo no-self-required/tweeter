@@ -68,6 +68,7 @@ $('#tweet-form').submit((event) => {
     $( "#alert-null" ).slideUp( "slow", function() {
       });
     //refreshes tweet container tweets after submitting
+    $('#tweet-text').val('');
     loadTweets();
   })
 })
