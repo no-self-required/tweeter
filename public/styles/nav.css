@@ -1,7 +1,45 @@
+@media only screen and (min-width: 1024px) {
+  nav {
+    display: flex;
+    height: 5em;
+    background-color: #4056A1;
+    color: white;
+    justify-content: space-between;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 5;
+  }
+  
+  .write {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 1.5em;
+    font-size: 20px;
+  }
+  
+  #double-down {
+    display: flex;
+    justify-content: center;
+    color: red
+  }
+  
+  .logo {
+    margin-top: 20px;
+    margin-left: 1em;
+    font-size: 2em;
+  }
+}
+
+/* LAPTOP */
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  
 nav {
   display: flex;
-  height: 100px;
-  background-color: #4056A1;
+  height: 5em;
+  background-color: cyan;
+  background-image: url(/images/blu-stripes.png);
   color: white;
   justify-content: space-between;
   position: fixed; /* Set the navbar to fixed position */
@@ -13,8 +51,9 @@ nav {
 .write {
   display: flex;
   flex-direction: column;
-  margin-top: 35px;
+  margin-top: 20px;
   margin-right: 1.5em;
+  font-size: 20px;
 }
 
 #double-down {
@@ -24,6 +63,8 @@ nav {
 }
 
 .logo {
-  margin-top: 40px;
-  margin-left: 1.5em;
+  margin-top: 20px;
+  margin-left: 1em;
+  font-size: 2em;
+}
 }

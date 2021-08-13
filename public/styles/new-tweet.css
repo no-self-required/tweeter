@@ -1,3 +1,236 @@
+@media only screen and (min-width: 1024px) {
+  #tweet-text {
+    display: flex;
+    justify-content: center;
+  
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+  
+    border: 0px;
+    border-bottom: 4px solid #545149;
+    
+    background-color: #f4f1ec;
+    margin-bottom: 10px;
+    margin-top: 15px;
+  
+    resize: none;
+    width: 900px;
+    height: 35px;
+  }
+  
+  /* NEED TO CLEAR TWEET TEXT FORM AFTER SUBMIT */
+  #tweet-text:focus, input:focus {
+    outline:none;
+  }
+  
+  .new-tweet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #alert-140 {
+    order: -1;
+  }
+  
+  #alert-null {
+    order: -1;
+  }
+  
+  #alert {
+    display: flex;
+    border: solid red;
+    padding: 7px;
+    width: 900px;
+    height: 40px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: red;
+  }
+  
+  #alert2 {
+    display: flex;
+    border: solid red;
+    padding: 7px;
+    width: 1000px;
+    height: 40px;
+    justify-content: space-between;
+    font-size: 20px;
+    color: red;
+  }
+  
+  #tweet-form {
+    margin-top: 1em;
+  }
+  #tweet-label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  #button {
+    font-family: 'Bungee', cursive;
+    color: white;
+    background-color: #4056A1;
+  }
+  
+  #container2 {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #char {
+    font-family: 'Bungee', cursive;
+    color: black;
+  }
+  
+  #bottom {
+    size: 25px;
+  }
+  
+  .tweet-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+  }
+  
+  .actual-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 900px;
+    height: 170px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    border: solid;
+  }
+  
+  #tweet-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .actual-container:hover {
+    box-shadow: 5px 5px #bdbdbdd0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4em;
+    margin-left: 0;
+    margin-right: 4em;
+  }
+  
+  #top-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0px;
+  }
+  
+  #ico-name {
+    display: flex;
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+  
+  #name {
+    margin-left: 5px;
+  }
+  
+  #avatar {
+    margin-top: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  #bottom-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 12px;
+  }
+  
+  #handle {
+    display: flex;
+    margin-right: 25px;
+    margin-top: 30px;
+    opacity: 0.5;
+    font-weight: bold;
+  }
+  .icons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    margin-right: 25px;
+    color: #4056A1;
+    font-size: 15px;
+  }
+  
+  #date {
+    display: flex;
+    margin-top: 8px;
+    margin-left: 15px;
+  }
+  
+  #tweet-content {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    color: black;
+  
+    border: 0px;
+    border-bottom: 4px solid #545149;
+    
+    background-color: #f4f1ec;
+    margin-top: 15px;
+    margin-left: 5px;
+  
+    resize: none;
+    width: 885px;
+    text-indent: 20px;
+  }
+  
+  .fab {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  
+  i.fas.fa-retweet {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  
+  i.fas.fa-retweet:hover {
+    transition: 0.3s;
+    color: rgba(43, 39, 0, 0.247);
+  }
+  
+  i.fas.fa-flag:hover {
+    transition: 0.3s;
+    color: rgba(43, 39, 0, 0.247);
+  }
+  
+  i.far.fa-heart:hover {
+    transition: 0.3s;
+    color: rgba(43, 39, 0, 0.247);
+  }
+  
+  #alert {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  
 #tweet-text {
   display: flex;
   justify-content: center;
@@ -223,4 +456,5 @@ i.far.fa-heart:hover {
 
 #alert {
   display: flex;
+}
 }

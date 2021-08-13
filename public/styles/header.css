@@ -1,4 +1,59 @@
-header {
+/* LAPTOP/DESKTOP */
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 23em;
+    width: 35em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(79, 255, 255);
+    background-image: url(/images/blu-stripes.png);
+    margin-top: 5em;
+    margin-left: 3em;
+    margin-right: 10em;
+  }
+  
+  #avaName {
+    
+    font-size: 2em;
+    /* margin-top: -3px; */
+  }
+  
+  #avaNameChar {
+    margin: 0;
+  }
+  
+  #profileAva {
+    height: 15em;
+  }
+}
+
+/* TABLET AND SMALLER */
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  
+  header {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: cyan;
+    background-image: url(/images/blu-stripes.png);
+    margin-top: 5em;
+    /* padding-top: 100px; */
+  }
+
+  #avaName {    
+    font-size: 2em;
+  }
+
+  #avaNameChar {
+    margin: 0;
+  }
+}
+
+/* header {
   height: 400px;
   display: flex;
   flex-direction: column;
@@ -6,5 +61,4 @@ header {
   align-items: center;
   background-color: cyan;
   background-image: url(/images/blu-stripes.png);
-  /* padding-top: 100px; */
-}
+} */

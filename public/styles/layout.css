@@ -3,46 +3,84 @@
  * https://css-tricks.com/international-box-sizing-awareness-day/
  * Do not modify these two selectors, please
  */
-html {
-  box-sizing: border-box;
+
+
+@media only screen and (min-width: 1024px) {
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+  }
+  
+  .write {
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f1ec;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .realBody {
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-between;
+  }
 }
-*, *:before, *:after {
-  box-sizing: inherit;
+
+@media only screen and (min-width: 0px) and (max-width: 1024px) {
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /*
+   * Global layout stuff
+   */
+  
+  body {
+    color: #545149;
+    background-color: #f4f1ec;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+  }
+  
+  .write {
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f1ec;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .realBody {
+    /* margin-top: 1em; */
+  }
 }
-
-/*
- * Global layout stuff
- */
-
-body {
-  color: #545149;
-  background-color: #f4f1ec;
-  font-family: 'Source Sans Pro', sans-serif;
-}
-
-.logo {
-  font-family: 'Bungee', cursive;
-  font-size: 40px;
-}
-
-.write {
-  font-family: 'Source Sans Pro';
-  font-size: 25px;
-}
-
-main {
-  display: flex;
-  justify-content: center;
-  background-color: #f4f1ec;
-  margin-right: 5%;
-  margin-left: 5%;
-}
-
-.realBody {
-  margin-top: 100px;
-}
-
-
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
