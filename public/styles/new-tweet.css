@@ -109,6 +109,7 @@
     margin-bottom: 15px;
     border: solid;
     border-color: white;
+    border-radius: 1em;
   }
   
   #tweet-section {
@@ -120,7 +121,7 @@
   .actual-container:hover {
     box-shadow: 5px 5px #ffffffd0;
     transition: 0.3s;
-    color: white;
+    color: whitesmoke;
   }
   
   .container {
@@ -232,17 +233,17 @@
   
   i.fas.fa-retweet:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
   
   i.fas.fa-flag:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
   
   i.far.fa-heart:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
   
   #alert {
@@ -382,8 +383,10 @@
     height: 170px;
     margin-top: 40px;
     margin-bottom: 15px;
+
     border: solid;
     border-color: white;
+    border-radius: 1em;
   }
 
   #tweet-section {
@@ -395,7 +398,7 @@
   .actual-container:hover {
     box-shadow: 5px 5px #ffffffd0;
     transition: 0.3s;
-    color: white;
+    color: whitesmoke;
   }
 
   .container {
@@ -508,17 +511,17 @@
 
   i.fas.fa-retweet:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
 
   i.fas.fa-flag:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
 
   i.far.fa-heart:hover {
     transition: 0.3s;
-    color: rgba(0, 247, 255, 0.863);
+    color: rgba(102, 102, 102, 0.863);
   }
 
   #alert {
