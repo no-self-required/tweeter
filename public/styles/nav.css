@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1585px) {
   nav {
     display: flex;
     height: 5em;
@@ -25,6 +25,14 @@
     justify-content: center;
     color: white;
   }
+
+  #compose {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    margin-left: 3.3em;
+  }
   
   .logo {
     margin-top: 20px;
@@ -33,39 +41,47 @@
   }
 }
 
-/* LAPTOP */
-@media only screen and (min-width: 0px) and (max-width: 1024px) {
+
+@media only screen and (min-width: 0px) and (max-width: 1585px) {
   
-nav {
-  display: flex;
-  height: 5em;
-  background-color: black;
-  background-image: url(/images/blu-stripes.png);
-  color: white;
-  justify-content: space-between;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
-  width: 100%; /* Full width */
-  z-index: 5;
-}
+  nav {
+    display: flex;
+    height: 5em;
+    background-color: black;
+    background-image: url(/images/blu-stripes.png);
+    color: white;
+    justify-content: space-between;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 5;
+  }
 
-.write {
-  display: flex;
-  flex-direction: column;
-  margin-top: 20px;
-  margin-right: 1.5em;
-  font-size: 20px;
-}
+  .write {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-right: 1.5em;
+    font-size: 20px;
+  }
 
-#double-down {
-  display: flex;
-  justify-content: center;
-  color: white;
-}
+  #double-down {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
 
-.logo {
-  margin-top: 20px;
-  margin-left: 1em;
-  font-size: 2em;
-}
+  .logo {
+    margin-top: 20px;
+    margin-left: 1em;
+    font-size: 2em;
+  }
+
+  #compose {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    margin-left: 3.3em;
+  }
 }

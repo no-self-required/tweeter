@@ -38,7 +38,10 @@
 
     <nav>
       <div class ="logo"><span>tweeter</span></div>
-      <div class ="write"><span><b>Write</b> a new tweet</span><i id="double-down" class="fas fa-angle-double-down"></i></div>
+      <div class ="write">
+        <span><b>Write</b> a new tweet</span>
+        <button id="compose"><i id="double-down" class="fas fa-angle-double-down"></i></button>
+      </div>
     </nav>
     <section class="realBody">
       <header>
@@ -53,27 +56,26 @@
 
     
     <!-- Page-specific (main) content here -->
-    <main class="container">
-      <section class="new-tweet">
-        <form method="POST" action='/tweets' id="tweet-form">
-          <label for="text" id="tweet-label" >What are you humming about?</label>
-          <textarea name="text" id="tweet-text" ></textarea>
-
-          <div id="container2">
-            <button id="button" type="submit">Tweet</button>
-            <output id="char" name="counter" class="counter" for="tweet-text">140</output>
-          </div>
-        </form>
-        <div id=alert-140>
-          <p id="alert"><i class="fas fa-exclamation-triangle"></i> Cannot tweet more than 140 characters! <i class="fas fa-exclamation-triangle"></i></p>
-        </div> 
-        <div id=alert-null>
-          <p id="alert2"><i class="fas fa-exclamation-triangle"></i> Cannot tweet empty message! <i class="fas fa-exclamation-triangle"></i></p>
-        </div> 
-      </section>
-      <section id="tweet-section">   
-      </section> 
-    </main>  
+      <main class="container">
+        <section class="new-tweet">
+          <form method="POST" action='/tweets' id="tweet-form">
+            <label for="text" id="tweet-label" >What are you humming about?</label>
+            <textarea name="text" id="tweet-text" ></textarea>
+            <div id="container2">
+              <button id="button" type="submit">Tweet</button>
+              <output id="char" name="counter" class="counter" for="tweet-text">140</output>
+            </div>
+          </form>
+          <div id=alert-140>
+            <p id="alert"><i class="fas fa-exclamation-triangle"></i> Cannot tweet more than 140 characters! <i class="fas fa-exclamation-triangle"></i></p>
+          </div> 
+          <div id=alert-null>
+            <p id="alert2"><i class="fas fa-exclamation-triangle"></i> Cannot tweet empty message! <i class="fas fa-exclamation-triangle"></i></p>
+          </div> 
+        </section>
+        <section id="tweet-section">   
+        </section> 
+      </main>  
     </section>
   </body>
 </html>
