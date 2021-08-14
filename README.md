@@ -19,3 +19,8 @@ This repository is the starter code for the project: Students will fork and clon
 - Body-parser
 - md5
 
+
+!["Screenshot of desktop size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/full-screen.png)
+!["Screenshot of smaller window size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/smallerbreakpoint.png)
+!["Screenshot of empty tweet error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/emptyerror.png)
+!["Screenshot of character limit error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/limitexceed.png)
