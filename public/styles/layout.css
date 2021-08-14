@@ -4,7 +4,6 @@
  * Do not modify these two selectors, please
  */
 
-
 @media only screen and (min-width: 1585px) {
   html {
     box-sizing: border-box;
@@ -81,6 +80,5 @@
   .realBody {
     background-image: url(/images/blu-stripes.png);
     background-color: black;
-    /* margin-top: 1em; */
   }
 }

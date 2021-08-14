@@ -48,13 +48,11 @@ $(document).ready(function() {
     const str = $( "#tweet-form" ).serialize();
     if (str === 'text=') {
       $( "#alert-null" ).slideDown( "slow", function() {
-      // Animation complete.
       });
       return;
     }
     else if (str.length > 145) {   
       $( "#alert-140" ).slideDown( "slow", function() {
-        // Animation complete.
       });
       return;
     }
