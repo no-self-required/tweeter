@@ -46,7 +46,7 @@
   nav {
     display: flex;
     height: 5em;
-    background-color: black;
+    background-color: rgb(22, 22, 22);
     background-image: url(/images/blu-stripes.png);
     color: white;
     justify-content: space-between;

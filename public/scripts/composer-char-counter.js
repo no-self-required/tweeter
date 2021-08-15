@@ -13,7 +13,7 @@ $(document).ready(function() {
       counter.css({
         color: 'red'
       });
-    } else if (charExceed > 0) {
+    } else if (charExceed >= 0) {
       counter.css({
         color: 'white'
       });

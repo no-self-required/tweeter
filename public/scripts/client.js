@@ -3,10 +3,12 @@
  * jQuery is already loaded
  * Reminder: Use (and do all your DOM work in) jQuery's document ready function
  */
+
+
 $(document).ready(function() {
 
-  $( "#alert-140" ).hide();
-  $( "#alert-null" ).hide();
+$( "#alert-140" ).hide();
+$( "#alert-null" ).hide();
 
   const renderTweets = function(tweets) {
     $( "#tweet-section" ).empty();
@@ -45,17 +47,21 @@ $(document).ready(function() {
 
   $('#tweet-form').submit((event) => {
     event.preventDefault();
+    if ($('#tweet-text').val() === "" || $('#tweet-text').val() === null || $('#tweet-text').val().trim().length === 0){
+      $( "#alert-null" )
+        .slideDown("slow")
+        .delay(2000)
+        .slideUp("slow");
+        return;
+    }
+    else if ($('#tweet-text').val().length > 140) {   
+      $( "#alert-140" )
+        .slideDown("slow")
+        .delay(2000)
+        .slideUp("slow");
+        return;
+    }
     const str = $( "#tweet-form" ).serialize();
-    if (str === 'text=') {
-      $( "#alert-null" ).slideDown( "slow", function() {
-      });
-      return;
-    }
-    else if (str.length > 145) {   
-      $( "#alert-140" ).slideDown( "slow", function() {
-      });
-      return;
-    }
     $.ajax('/tweets', { 
       method: 'POST',
       data: str 
