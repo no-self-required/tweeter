@@ -4,7 +4,7 @@
  * Do not modify these two selectors, please
  */
 
-@media only screen and (min-width: 1585px) {
+@media only screen and (min-width: 1200px) {
   html {
     box-sizing: border-box;
   }
@@ -45,7 +45,7 @@
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1585px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   html {
     box-sizing: border-box;
   }
@@ -81,4 +81,44 @@
     background-image: url(/images/blu-stripes.png);
     background-color: black;
   }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+
+  html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    color: #ffffff;
+    background-color: #f4f1ec;
+    font-family: 'Source Sans Pro', sans-serif;
+  }
+  
+  .logo {
+    font-family: 'Bungee', cursive;
+    font-size: 40px;
+  }
+  
+  .write {
+    font-family: 'Source Sans Pro';
+    font-size: 25px;
+  }
+  
+  main {
+    display: flex;
+    justify-content: center;
+    background-color: #f4f1ec;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  
+  .realBody {
+    background-image: url(/images/blu-stripes.png);
+    background-color: black;
+  }
+  
 }

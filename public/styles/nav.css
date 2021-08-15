@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1585px) {
+@media only screen and (min-width: 1200px) {
   nav {
     display: flex;
     height: 5em;
@@ -41,7 +41,7 @@
   }
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1585px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   
   nav {
     display: flex;
@@ -82,5 +82,47 @@
     background-color: transparent;
     border: none;
     margin-left: 3.3em;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    height: 7em;
+    background-color: rgb(28, 27, 48);
+    background-image: url(/images/blu-stripes.png);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    z-index: 5;
+  }
+
+  .write {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.5em;
+    font-size: 20px;
+  }
+
+  #double-down {
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  .logo {
+    font-size: 2em;
+  }
+
+  #compose {
+    display: flex;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    margin-left: 3.1em;
   }
 }

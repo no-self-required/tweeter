@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1585px) {
+@media only screen and (min-width: 1200px) {
   header {
     height: 23em;
     width: 35em;
@@ -35,7 +35,7 @@
 
 }
 
-@media only screen and (min-width: 0px) and (max-width: 1585px) {
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
   
   header {
     height: 300px;
@@ -46,6 +46,36 @@
     background-color: black;
     background-image: url(/images/blu-stripes.png);
     margin-top: 5em;
+  }
+
+  #avaName {    
+    font-size: 2em;
+  }
+
+  #avaNameChar {
+    margin: 0;
+    color: white;
+  }
+
+  #profileAva {
+    height: 200px;
+    margin-bottom: -25px;
+    font-size: 10em;
+    color: white;
+  }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+  header {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    background-color: black;
+    background-image: url(/images/blu-stripes.png);
+
+    padding-top: 10em;
   }
 
   #avaName {    
