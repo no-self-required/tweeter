@@ -2,7 +2,7 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-The stack includes: HTML, CSS, JS, jQuery and AJAX for front end, and Node, Express and MongoDB for back end.
+The stack includes: HTML, CSS, JS, jQuery and AJAX for front end. Node, Express and MongoDB for back end.
 
 ## Getting Started
 
