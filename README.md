@@ -4,13 +4,12 @@ Tweeter is a simple, single-page Twitter clone.
 
 The stack includes: HTML, CSS, JS, jQuery and AJAX for front end. Node, Express and MongoDB for back end.
 
-## Getting Started
-
-1. Fork this repository, then clone your fork of this repository.
-2. Install dependencies using the `npm install` command.
-3. Start the web server using the `npm run local` command. The app will be served at <http://localhost:8080/>.
-4. Go to <http://localhost:8080/> in your browser.
-
+# Screenshots
+!["Screenshot of desktop size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/fullscreen.png)
+!["Screenshot of smaller window size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/narrow.png)
+!["Screenshot of most narrow size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/mostnarrowv2.png)
+!["Screenshot of empty tweet error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/emptyerror.png)
+!["Screenshot of character limit error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/longtweeterror.png)
 ## Dependencies
 
 - Express
@@ -19,8 +18,3 @@ The stack includes: HTML, CSS, JS, jQuery and AJAX for front end. Node, Express 
 - Body-parser
 - md5
 
-!["Screenshot of desktop size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/fullscreen.png)
-!["Screenshot of smaller window size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/narrow.png)
-!["Screenshot of most narrow size"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/mostnarrowv2.png)
-!["Screenshot of empty tweet error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/emptyerror.png)
-!["Screenshot of character limit error"](https://raw.githubusercontent.com/no-self-required/tweeter/master/docs/longtweeterror.png)
